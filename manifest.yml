@@ -1,0 +1,8 @@
+#Manifest file for Bluemix (Cloudfoundry-based) to create background cron-like service
+applications:
+- name: hltimer
+  memory: 256M
+  instances: 1
+  no-route: true
+  command: python mytimer.py
+  path: .
